@@ -56,9 +56,9 @@ function AddRecipe({ addRecipe }) {
   return (
     <div>
       <h2>Ajouter une Recette</h2>
-      <form onSubmit={handleSubmit}> 
+      <form className="form" onSubmit={handleSubmit}> 
         <div>
-        <button type="submit">Ajouter la Recette</button>
+          <button className="leBouttonCool" type="submit">Ajouter la Recette</button>
         </div> 
         <input
           type="file"
@@ -97,10 +97,11 @@ function AddRecipe({ addRecipe }) {
           required >
         </textarea>
         </form>
+        <div className="formIngredient">
         <h4>ingredients</h4>
 
         {ingredients.map((ig) => (
-          <div key={ig.id}>
+          <div className="formIngredients" key={ig.id}>
             <input
               name="name"
               id={ig.id}
@@ -133,7 +134,8 @@ function AddRecipe({ addRecipe }) {
             </button>
           </div>
         ))}      
-        <input value="Ajouter un ingredient" type="button" onClick={addOneIngredient} />
+        <input className='petitIngredient' value="Ajouter un ingredient" type="button" onClick={addOneIngredient} />
+    </div>
     </div>
   );
 }

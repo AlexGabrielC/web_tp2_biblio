@@ -1,6 +1,7 @@
 :root {
   --recipe-box-color: beige;
   --recipe-box-color-hover: rgb(192, 192, 177);
+  --background-color-h1: red;
 }
 
 * {
@@ -54,4 +55,162 @@ code {
 
   max-height: 100px;
   max-width: 200px;
+}
+
+h1 {
+  background-color: var(--background-color-h1);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right : 5%;
+  margin-left: 2%;
+}
+
+
+.ajoutRecette {
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  height: 48px;
+
+}
+
+.ajoutRecette:hover{
+    color: #fff;
+    background-color: #616467;
+}
+
+.accueil{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #1ED760;
+  height: 48px;
+
+}
+
+.accueil:hover{
+  transform: scale(1.04);
+  background-color: #21e065;
+}
+.form{
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  margin: 5%
+}
+
+img{
+  width: 200px;
+  height: 200px;
+}
+
+.formIngredient{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 25%;
+  margin-right: 25%;
+  
+}
+
+.formIngredients{
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  width : 100%
+}
+
+.leBouttonCool{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #616467;
+  box-shadow: inset 0 0 0 2px #616467;
+  background-color: transparent;
+  height: 48px;
+
+}
+
+.leBouttonCool:hover{
+  color: #fff;
+  background-color: #616467;
+}
+
+.petitIngredient{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #15883e;
+  height: 48px;
+
+}
+
+.petitIngredient:hover{
+  background-color: #1db954;
 }

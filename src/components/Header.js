@@ -6,9 +6,9 @@ function Header() {
     <header>
       <h1>Ma Bibliothèque de Recettes</h1>
       <nav>
-        <ul>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/add">Ajouter une Recette</Link></li>
+        <ul className="navigation">
+          <Link className="accueil" to="/"  style={{textDecoration:'none'}}>Accueil</Link>
+          <Link className="ajoutRecette" to="/add"  style={{textDecoration:'none'}}>Ajouter une Recette</Link>
         </ul>
       </nav>
     </header>
