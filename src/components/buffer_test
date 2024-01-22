@@ -1,0 +1,45 @@
+let tmp_recipe = newRecipe
+    tmp_recipe.ingredients[newRecipe.ingredients.length]={ name: '', quantity: 0, unit: '' };
+    setNewRecipe({ ...tmp_recipe })
+
+    {newRecipe.ingredients.map((ingredient, index) => (
+      <div key={index}>
+        <input
+          name="name"
+          id= {index}
+          type="text"
+          placeholder="nom de l'ingredient"
+          value={ingredient.name}
+          onChange={handleChangeIngredient}
+        />
+        <input
+          name="quantity"
+          id= {index}
+          type="number"
+          placeholder='quantité'
+          value={ingredient.quantity}
+          onChange={handleChangeIngredient}
+        />
+        <select
+          name="unit"
+          id= {index}
+          value={ingredient.unit}
+          onChange={handleChangeIngredient}
+          label="unité"
+        >
+          <option>u</option>
+          <option>ml</option>
+          <option>gr</option>
+        </select>
+        <button onClick={() => { deleteIngredient(index) }}>
+          supprimer ingredient
+        </button>
+      </div>
+    ))} 
+
+    { name: '', quantity: 0, unit: '' }
+
+    setNewRecipe(prevState => ({...prevState, ingredients[id]: {...prevState.ingredients[id], [name]:value}}));
+
+    let newArr = [...newRecipe];
+    newArr.ingredients[id][name]= value;
